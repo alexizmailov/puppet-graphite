@@ -58,6 +58,7 @@ class graphite::config inherits graphite::params {
       $gr_web_group_REAL = pick($::graphite::gr_web_group)
       include graphite::config_gunicorn
       $web_server_package_require = undef
+      $web_server_service_notify = undef
     }
 
     'none'     : {
